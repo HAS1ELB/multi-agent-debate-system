@@ -1,0 +1,13 @@
+openai
+langchain
+llama-index
+pinecone-client
+fastapi
+uvicorn
+pytest
+python-dotenv
+requests
+wikipedia-api
+diskcache
+transformers
+streamlit
