@@ -1,17 +1,24 @@
-import time
 import streamlit as st
+from src.debate.debate_flow import DebateFlow
+from src.debate.consensus import Consensus
+from src.fact_checking.fact_checker import FactChecker
+from src.utils.logger import Logger
 
 class DebateManager:
     def __init__(self, agents):
         self.agents = agents
+        self.debate_flow = DebateFlow(topic="")
+        self.fact_checker = FactChecker()
+        self.consensus = Consensus()
+        self.logger = Logger()
 
     def start_debate(self, topic):
-        for round in range(3):  # 3 tours de débat
-            st.write(f"### Round {round + 1}")
-            for agent in self.agents:
-                argument = agent.generate_argument(topic)
-                st.write(f"**{agent.name}**: {argument}")
-                for other_agent in self.agents:
-                    if other_agent != agent:
-                        response = other_agent.evaluate_argument(argument)
-                        st.write(f"**{other_agent.name} responds**: {response}")
+        try:
+            self.debate_flow.topic = topic
+            arguments, rebuttals, consensus = self.debate_flow.run_debate(
+                self.agents, self.fact_checker, self.consensus
+            )
+            return arguments, rebuttals, consensus
+        except Exception as e:
+            self.logger.log(f"Error starting debate: {e}")
+            return {}, [], "Error starting debate."

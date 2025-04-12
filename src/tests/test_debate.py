@@ -4,4 +4,6 @@ from src.agents.scientist import Scientist
 def test_debate_manager():
     scientist = Scientist()
     manager = DebateManager(agents=[scientist])
-    manager.start_debate("Climate Change")
+    arguments, rebuttals, consensus = manager.start_debate("Climate Change")
+    assert arguments, "Arguments should not be empty"
+    assert consensus, "Consensus should not be empty"

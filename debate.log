@@ -1,0 +1,187 @@
+2025-04-12 20:28:08,509 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 20:28:19,886 - Use pytorch device_name: cpu
+2025-04-12 20:28:19,886 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 20:28:23,679 - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-04-12 20:31:12,778 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 20:31:15,962 - Use pytorch device_name: cpu
+2025-04-12 20:31:15,962 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 20:31:18,455 - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-04-12 21:13:36,463 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:13:41,898 - Use pytorch device_name: cpu
+2025-04-12 21:13:41,898 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:13:44,483 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:13:50,318 - Use pytorch device_name: cpu
+2025-04-12 21:13:50,318 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:18:32,563 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:18:37,323 - Use pytorch device_name: cpu
+2025-04-12 21:18:37,324 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:18:39,849 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:18:46,804 - Use pytorch device_name: cpu
+2025-04-12 21:18:46,804 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:21:42,715 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:21:48,682 - Use pytorch device_name: cpu
+2025-04-12 21:21:48,682 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:21:51,259 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:21:56,611 - Use pytorch device_name: cpu
+2025-04-12 21:21:56,611 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:22:01,336 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:22:09,760 - Use pytorch device_name: cpu
+2025-04-12 21:22:09,760 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:22:13,252 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Climate Change&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:22:13,878 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=extracts&titles=Climate change&explaintext=1&exsectionformat=wiki
+2025-04-12 21:23:03,089 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and its wider effects on Earth’s climate system . The current rise in global temperatures is driven by human activities, especially fossil fuel burning . Carbon dioxide, the primary gas driving global warming&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:23:03,465 - Error checking fact: Unable to understand extra arguments ('No information found.', ['True', 'False', 'Uncertain'])
+2025-04-12 21:23:48,426 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and wider effects on Earth's climate system . Carbon dioxide, the primary gas driving global warming, has increased in concentration by about 50% since the pre-industrial era to levels not seen for&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:23:48,633 - Error checking fact: Unable to understand extra arguments ('No information found.', ['True', 'False', 'Uncertain'])
+2025-04-12 21:25:25,226 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:25:32,984 - Use pytorch device_name: cpu
+2025-04-12 21:25:32,984 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:25:35,319 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:25:40,172 - Use pytorch device_name: cpu
+2025-04-12 21:25:40,172 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:25:42,707 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:25:48,759 - Use pytorch device_name: cpu
+2025-04-12 21:25:48,759 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:25:50,865 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:25:55,909 - Use pytorch device_name: cpu
+2025-04-12 21:25:55,909 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:25:59,465 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:26:04,401 - Use pytorch device_name: cpu
+2025-04-12 21:26:04,401 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:26:06,430 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and its wider effects on Earth’s climate system . The current rise in global temperatures is driven by human activities, especially fossil fuel burning . Carbon dioxide, the primary gas driving global warming&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:26:06,850 - Error checking fact: Unable to understand extra arguments ('No information found.', ['True', 'False', 'Uncertain'])
+2025-04-12 21:26:06,853 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and wider effects on Earth's climate system . Carbon dioxide, the primary gas driving global warming, has increased in concentration by about 50% since the pre-industrial era to levels not seen for&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:26:07,063 - Error checking fact: Unable to understand extra arguments ('No information found.', ['True', 'False', 'Uncertain'])
+2025-04-12 21:26:08,096 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:08,097 - Retrying request to /chat/completions in 0.499804 seconds
+2025-04-12 21:26:08,733 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:08,734 - Retrying request to /chat/completions in 0.956405 seconds
+2025-04-12 21:26:09,952 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:09,961 - Error generating argument for Dr. Ethics: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:09,962 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Error generating argument.&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:26:10,163 - Error checking fact: Unable to understand extra arguments ('No information found.', ['True', 'False', 'Uncertain'])
+2025-04-12 21:26:10,414 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:10,415 - Retrying request to /chat/completions in 0.459084 seconds
+2025-04-12 21:26:11,016 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:11,017 - Retrying request to /chat/completions in 0.827128 seconds
+2025-04-12 21:26:12,005 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:12,007 - Error generating argument for Dr. History: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:12,007 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Error generating argument.&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:26:12,207 - Error checking fact: Unable to understand extra arguments ('No information found.', ['True', 'False', 'Uncertain'])
+2025-04-12 21:26:12,419 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:12,420 - Retrying request to /chat/completions in 0.428419 seconds
+2025-04-12 21:26:13,023 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:13,023 - Retrying request to /chat/completions in 0.843654 seconds
+2025-04-12 21:26:14,071 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:14,072 - Error evaluating argument for Dr. Ethics: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:14,226 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:14,227 - Retrying request to /chat/completions in 0.431830 seconds
+2025-04-12 21:26:14,816 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:14,817 - Retrying request to /chat/completions in 0.910951 seconds
+2025-04-12 21:26:15,870 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:15,871 - Error evaluating argument for Dr. History: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:16,034 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:16,035 - Retrying request to /chat/completions in 0.456807 seconds
+2025-04-12 21:26:16,686 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:16,686 - Retrying request to /chat/completions in 0.867109 seconds
+2025-04-12 21:26:17,689 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:17,689 - Error evaluating argument for Dr. Ethics: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:17,841 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:17,842 - Retrying request to /chat/completions in 0.469787 seconds
+2025-04-12 21:26:18,517 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:18,518 - Retrying request to /chat/completions in 0.778160 seconds
+2025-04-12 21:26:19,486 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:19,487 - Error evaluating argument for Dr. History: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:19,735 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:19,736 - Retrying request to /chat/completions in 0.441509 seconds
+2025-04-12 21:26:20,370 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:20,370 - Retrying request to /chat/completions in 0.804256 seconds
+2025-04-12 21:26:21,375 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:21,376 - Error evaluating argument for Dr. Science: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:21,564 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:21,565 - Retrying request to /chat/completions in 0.441190 seconds
+2025-04-12 21:26:22,433 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:22,434 - Retrying request to /chat/completions in 0.836548 seconds
+2025-04-12 21:26:23,439 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:23,441 - Error evaluating argument for Dr. Economics: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:23,606 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:23,607 - Retrying request to /chat/completions in 0.498083 seconds
+2025-04-12 21:26:24,261 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:24,262 - Retrying request to /chat/completions in 0.865358 seconds
+2025-04-12 21:26:25,483 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:25,484 - Error evaluating argument for Dr. History: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:25,723 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:25,723 - Retrying request to /chat/completions in 0.436629 seconds
+2025-04-12 21:26:26,322 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:26,322 - Retrying request to /chat/completions in 0.795717 seconds
+2025-04-12 21:26:27,260 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:27,261 - Error evaluating argument for Dr. Science: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:27,471 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:27,472 - Retrying request to /chat/completions in 0.492132 seconds
+2025-04-12 21:26:28,134 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:28,135 - Retrying request to /chat/completions in 0.819176 seconds
+2025-04-12 21:26:29,169 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:29,170 - Error evaluating argument for Dr. Economics: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:26:29,447 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:29,449 - Retrying request to /chat/completions in 0.473533 seconds
+2025-04-12 21:26:30,062 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:30,062 - Retrying request to /chat/completions in 0.751538 seconds
+2025-04-12 21:26:31,251 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-04-12 21:26:31,252 - Error evaluating argument for Dr. Ethics: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-04-12 21:37:36,139 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:42:58,479 - Use pytorch device_name: cpu
+2025-04-12 21:42:58,479 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:43:01,077 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:43:03,532 - Use pytorch device_name: cpu
+2025-04-12 21:43:03,533 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:43:06,853 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:43:07,873 - Use pytorch device_name: cpu
+2025-04-12 21:43:07,873 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:43:09,829 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and its wider effects on Earth’s climate system . The current rise in global temperatures is driven by human activities, especially fossil fuel burning . Carbon dioxide, the primary gas driving global warming&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:43:17,692 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and wider effects on Earth's climate system . Carbon dioxide, the primary gas driving global warming, has increased in concentration by about 50% since the pre-industrial era to levels not seen for&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:45:36,917 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:45:39,700 - Use pytorch device_name: cpu
+2025-04-12 21:45:39,700 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:45:41,935 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:45:44,728 - Use pytorch device_name: cpu
+2025-04-12 21:45:44,729 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:45:46,863 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:45:49,323 - Use pytorch device_name: cpu
+2025-04-12 21:45:49,324 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:45:51,315 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:45:54,248 - Use pytorch device_name: cpu
+2025-04-12 21:45:54,249 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:45:57,944 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 21:45:58,783 - Use pytorch device_name: cpu
+2025-04-12 21:45:58,784 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 21:46:00,670 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and its wider effects on Earth’s climate system . The current rise in global temperatures is driven by human activities, especially fossil fuel burning . Carbon dioxide, the primary gas driving global warming&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:46:03,231 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and wider effects on Earth's climate system . Carbon dioxide, the primary gas driving global warming, has increased in concentration by about 50% since the pre-industrial era to levels not seen for&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:46:40,594 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Climate change impacts are also being evaluated for their potential to reduce global emissions. In the United States, the Environmental Protection Agency has proposed a limit of about 2.5% of global emissions by 2020. While such a limit would reduce emissions&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:47:19,614 - Repetitive argument detected for Dr. History, regenerating...
+2025-04-12 21:48:00,572 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Climate change impacts can be categorized into two groups, which include impacts on the human body and its environment and impacts on human environment and the natural world. These include impacts of human body, its environment, and the environmental world. Human impacts&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 21:48:44,641 - Repetitive evaluation detected for Dr. History, regenerating...
+2025-04-12 21:49:25,611 - Repetitive evaluation detected for Dr. Science, regenerating...
+2025-04-12 21:50:25,559 - Repetitive evaluation detected for Dr. History, regenerating...
+2025-04-12 21:51:08,886 - Repetitive evaluation detected for Dr. Science, regenerating...
+2025-04-12 21:51:50,368 - Repetitive evaluation detected for Dr. Economics, regenerating...
+2025-04-12 21:52:32,529 - Repetitive evaluation detected for Dr. Ethics, regenerating...
+2025-04-12 22:03:16,033 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 22:03:18,066 - Use pytorch device_name: cpu
+2025-04-12 22:03:18,066 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 22:03:20,989 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 22:03:23,350 - Use pytorch device_name: cpu
+2025-04-12 22:03:23,350 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 22:03:26,069 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 22:03:28,362 - Use pytorch device_name: cpu
+2025-04-12 22:03:28,362 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 22:03:30,729 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 22:03:32,961 - Use pytorch device_name: cpu
+2025-04-12 22:03:32,961 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 22:03:35,510 - Wikipedia: language=en, user_agent: MultiAgentDebateSystem/1.0 (Wikipedia-API/0.8.1; https://github.com/martin-majlis/Wikipedia-API/), extract_format=1
+2025-04-12 22:03:36,299 - Use pytorch device_name: cpu
+2025-04-12 22:03:36,299 - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-04-12 22:03:38,114 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and its wider effects on Earth’s climate system . The current rise in global temperatures is driven by human activities, especially fossil fuel burning . Carbon dioxide, the primary gas driving global warming&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 22:03:40,020 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles= Present-day climate change includes both global warming and wider effects on Earth's climate system . Carbon dioxide, the primary gas driving global warming, has increased in concentration by about 50% since the pre-industrial era to levels not seen for&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 22:03:41,151 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Climate change impacts can be categorized into two groups, which include impacts on the human body and its environment and impacts on human environment and the natural world. These include impacts of human body, its environment, and the environmental world. Human impacts&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 22:03:42,741 - Request URL: https://en.wikipedia.org/w/api.php?format=json&redirects=1&action=query&prop=info&titles=Climate change impacts are also being evaluated for their potential to reduce global emissions. In the United States, the Environmental Protection Agency has proposed a limit of about 2.5% of global emissions by 2020. While such a limit would reduce emissions&inprop=protection|talkid|watched|watchers|visitingwatchers|notificationtimestamp|subjectid|url|readable|preload|displaytitle|varianttitles
+2025-04-12 22:05:06,676 - Failed to generate non-repetitive evaluation for Dr. Science.
