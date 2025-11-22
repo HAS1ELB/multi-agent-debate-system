@@ -1,25 +1,29 @@
 import streamlit as st
 import sys
 import os
+import asyncio
 import matplotlib.pyplot as plt
 import networkx as nx
-from src.agents.factory import AgentFactory
-from src.debate.debate_manager import DebateManager
-from src.utils.db import DebateDB
 
 # Add project root to PYTHONPATH
 sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+# Add libs to path
+sys.path.append(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "libs"))
+
+from src.debate.autogen_manager import AutogenDebateManager
+from src.utils.db import DebateDB
+from autogen_agentchat.messages import TextMessage, ToolCallRequestEvent, ToolCallExecutionEvent, ToolCallSummaryMessage
 
 # Initialize database
 db = DebateDB()
 
 # Title
-st.title("Multi-Agent Debate System")
+st.title("Multi-Agent Debate System (Autogen)")
 
 # Description
 st.write(
-    "Simulate a debate between AI agents with different expertise. "
-    "Enter a topic, customize settings, and explore past debates!"
+    "Simulate a debate between AI agents with different expertise using Microsoft Autogen. "
+    "Enter a topic, customize settings, and watch the debate unfold!"
 )
 
 # Debate topic input
@@ -33,7 +37,6 @@ expertises = st.sidebar.multiselect(
     ["Science", "Economics", "Ethics", "History"],
     default=["Science", "Economics"]
 )
-use_api = st.sidebar.checkbox("Use OpenAI API (requires API key)", False)
 
 # Start debate button
 if st.button("Start Debate"):
@@ -44,101 +47,63 @@ if st.button("Start Debate"):
         st.error("Please select enough expertises for the number of agents.")
         st.stop()
 
-    # Initialize agents
+    # Initialize manager
     try:
-        agents = [AgentFactory.create_agent(exp, use_api=use_api) for exp in expertises[:num_agents]]
-        debate_manager = DebateManager(agents=agents)
+        debate_manager = AutogenDebateManager(expertises=expertises[:num_agents])
     except Exception as e:
-        st.error(f"Error initializing agents: {e}")
+        st.error(f"Error initializing Autogen manager: {e}")
         st.stop()
 
     # Display topic
     st.header(f"Debate Topic: {topic}")
 
     # Run debate
+    async def run_debate_ui():
+        st.write("### Debate in Progress...")
+        container = st.container()
+        arguments = []
+        
+        async for message in debate_manager.run_debate(topic):
+            # Display message
+            with container:
+                # Handle TextMessage
+                if isinstance(message, TextMessage):
+                    st.markdown(f"**{message.source}**: {message.content}")
+                    arguments.append(f"{message.source}: {message.content}")
+                
+                # Handle Tool Calls (optional: show as expander or status)
+                elif isinstance(message, ToolCallRequestEvent):
+                    with st.expander(f"🛠️ {message.source} using tools..."):
+                        for tool_call in message.content:
+                            st.write(f"Calling: `{tool_call.name}` with `{tool_call.arguments}`")
+                
+                # Handle Tool Outputs
+                elif isinstance(message, ToolCallExecutionEvent):
+                    with st.expander(f"✅ Tool Output for {message.source}", expanded=False):
+                        for result in message.content:
+                            st.write(f"Result: {result.content[:200]}...") # Truncate for readability
+
+                # Handle Summary
+                elif isinstance(message, ToolCallSummaryMessage):
+                     st.info(f"**{message.source}** (Tool Summary): {message.content}")
+                
+                # Ignore other types (like GroupChatTermination) to avoid raw dumps
+                else:
+                    # Uncomment for debugging
+                    # st.write(f"Debug: {type(message)} - {message}")
+                    pass
+
+        return arguments
+
     try:
-        st.write("### Opening Statements")
-        arguments = {}
-        for agent in debate_manager.agents:
-            argument = agent.generate_argument(topic)
-            if not argument or "Unable" in argument:
-                st.write(f"**{agent.name}**: Failed to generate argument.")
-                continue
-            fact_check = debate_manager.fact_checker.check_fact(argument)
-            verdict = fact_check.get("verdict", "Error")
-            confidence = fact_check.get("confidence", 0.0)
-            st.write(f"**{agent.name}**: {argument} ({verdict}, Confidence: {confidence:.2f})")
-            arguments[agent.name] = argument
-
-        st.write("### Rebuttals")
-        rebuttals = []
-        for agent in debate_manager.agents:
-            for other_agent in debate_manager.agents:
-                if other_agent != agent and arguments.get(agent.name):
-                    response = other_agent.evaluate_argument(arguments[agent.name])
-                    if response and "Unable" not in response:
-                        st.write(f"**{other_agent.name} responds to {agent.name}**: {response}")
-                        rebuttals.append({"responder": other_agent.name, "target": agent.name, "response": response})
-                    else:
-                        st.write(f"**{other_agent.name} responds to {agent.name}**: Unable to respond.")
-
-        st.write("### Consensus")
-        consensus = debate_manager.consensus.reach_consensus(list(arguments.values()))
-        st.write(f"**Consensus**: {consensus}")
-
-        # Sentiment analysis visualization
-        st.write("### Debate Sentiment Analysis")
-        try:
-            sentiment_scores = [
-                0.5 + 0.1 * i if "Unable" not in arguments.get(agent.name, "") else 0.2
-                for i, agent in enumerate(debate_manager.agents)
-            ]
-            fig, ax = plt.subplots(figsize=(8, 4))
-            ax.bar(
-                range(len(sentiment_scores)),
-                sentiment_scores,
-                tick_label=[agent.name for agent in debate_manager.agents]
-            )
-            ax.set_xlabel("Agent")
-            ax.set_ylabel("Sentiment Score")
-            ax.set_ylim(0, 1)
-            plt.xticks(rotation=45)
-            plt.tight_layout()
-            st.pyplot(fig)
-            plt.close(fig)
-        except Exception as e:
-            st.error(f"Error generating sentiment analysis: {e}")
-
-        # Interaction graph
-        st.write("### Agent Interaction Graph")
-        try:
-            G = nx.DiGraph()
-            for agent in debate_manager.agents:
-                G.add_node(agent.name)
-            for rebuttal in rebuttals:
-                G.add_edge(rebuttal["responder"], rebuttal["target"], weight=1)
-            fig, ax = plt.subplots(figsize=(8, 4))
-            pos = nx.spring_layout(G, seed=42)
-            nx.draw(
-                G,
-                pos,
-                with_labels=True,
-                node_color='lightblue',
-                edge_color='gray',
-                font_weight='bold',
-                node_size=1000,
-                ax=ax
-            )
-            plt.tight_layout()
-            st.pyplot(fig)
-            plt.close(fig)
-        except Exception as e:
-            st.error(f"Error generating interaction graph: {e}")
-
+        # Run the async debate
+        arguments = asyncio.run(run_debate_ui())
+        
         # Save debate
         if st.button("Save Debate"):
             try:
-                db.save_debate(topic, arguments, rebuttals, consensus)
+                # Simplified save for now
+                db.save_debate(topic, {"log": arguments}, [], "See log")
                 st.success("Debate saved successfully!")
             except Exception as e:
                 st.error(f"Error saving debate: {e}")
